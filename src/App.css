@@ -292,7 +292,7 @@ img.img-animate{
   text-align: center;
   font-size: 24px;
 }
-@media (max-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1439px) {
   .header{
     width: 100% !important;
   }
@@ -319,7 +319,7 @@ img.img-animate{
     width: 60% !important;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
    .header{
     width: 100% !important;
   }
@@ -349,7 +349,7 @@ img.img-animate{
   }
   
 }
-@media (max-width: 576px) {
+@media (min-width: 576px) and (max-width: 767px) {
   #home {
     height: 270vh !important;
   }
@@ -381,7 +381,7 @@ img.img-animate{
     flex-direction: column !important;
   }
 } 
-@media (max-width: 450px) {
+@media (min-width: 350px) and (max-width: 575px) {
    .header{
     width: 100% !important;
   }
@@ -432,3 +432,4 @@ img.img-animate{
   margin-left: -10% !important;
 }
 }
+ 
