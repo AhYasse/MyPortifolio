@@ -40,7 +40,6 @@ const EmailForm = () => {
   useEffect(() => {
     const sendEmailOnLoad = async () => {
       setIsSending(true);
-      setSubmissionMessage('Sending automatic notification...');
       // Define your template parameters.
       // What data do you want to send when the page loads?
       // Example: current URL, user agent, timestamp
@@ -57,7 +56,6 @@ const EmailForm = () => {
         setSubmissionMessage('Automatic notification sent!');
       } catch (err) {
         console.error('EmailJS (On Load) FAILED...', err);
-        setSubmissionMessage('Failed to send automatic notification.');
       } finally {
         setIsSending(false);
       }
