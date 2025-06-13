@@ -137,7 +137,7 @@ const EmailForm = () => {
             message: user_message,
         };
         setIsSending(true);
-         document.onload.emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
+          emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
             .then((response) => {
                 console.log("Email sent successfully!", response.status, response.text);
                 setSubmissionMessage("Message sent successfully!");
