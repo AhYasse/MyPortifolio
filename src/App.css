@@ -293,6 +293,9 @@ img.img-animate{
   font-size: 24px;
 }
 @media screen and (max-width: 1024px) {
+  .header{
+    width: 100% !important;
+  }
  .nav.navbar.scrolled a.style ,a.style{
     font-size: 1rem !important;
     margin-left: 9% !important;
@@ -317,6 +320,9 @@ img.img-animate{
   }
 }
 @media screen and (max-width: 768px) {
+   .header{
+    width: 100% !important;
+  }
     .main div h2 {
     width: 300px;
     font-size: 2rem !important;
@@ -376,6 +382,9 @@ img.img-animate{
   }
 } 
 @media screen and (max-width: 450px) {
+   .header{
+    width: 100% !important;
+  }
 
   #home {
     height: 270vh !important;
