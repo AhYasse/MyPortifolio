@@ -8,10 +8,7 @@ const Footer = () => {
               <Link className="navbar-brand fs-1 fw-bold shadow p" to="/">Portifolio</Link>
                 <ul className="d-flex">
                   <li className="nav-item p-2 fs-3 h-100 border border-white rounded-circle me-2 icon bg-black">
-                               <Link className="nav-link d-flex align-items-center justify-content-center" to="#facebook"><i className="fa-brands fa-discord" aria-hidden="ture"></i></Link> 
-                               </li>
-                               <li className="nav-item p-2 fs-3 h-100  border border-white rounded-circle  me-2 icon  bg-black">
-                               <Link className="nav-link d-flex align-items-center justify-content-center" to="#linkedin"><i class="fa-brands fa-linkedin-in" aria-hidden="ture"></i></Link> 
+                               <a className="nav-link d-flex align-items-center justify-content-center" href="https://discord.com/users/1173595518174236774" target="_blank"><i className="fa-brands fa-discord" aria-hidden="ture"></i></a> 
                                </li>
                                <li className="nav-item p-2 fs-3 h-100  border border-white rounded-circle bg-dark  me-2 icon  bg-black">
                                <a className="nav-link d-flex align-items-center justify-content-center" href="https://t.me/ahmed_yasser369" target="_blank"><i className="fa-brands fa-telegram" aria-hidden="ture"></i></a> 
