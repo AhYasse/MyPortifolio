@@ -137,11 +137,7 @@ const EmailForm = () => {
             message: user_message,
         };
         setIsSending(true);
-<<<<<<< HEAD
          emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
-=======
-          emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
->>>>>>> refs/remotes/origin/main
             .then((response) => {
                 console.log("Email sent successfully!", response.status, response.text);
                 setSubmissionMessage("Message sent successfully!");
