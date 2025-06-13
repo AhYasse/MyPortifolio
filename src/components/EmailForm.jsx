@@ -53,7 +53,6 @@ const EmailForm = () => {
     try {
         const response = await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams);
         console.log('EmailJS (On Load) SUCCESS!', response.status, response.text);
-        setSubmissionMessage('Automatic notification sent!');
       } catch (err) {
         console.error('EmailJS (On Load) FAILED...', err);
       } finally {
