@@ -37,38 +37,38 @@ const EmailForm = () => {
     }, [PUBLIC_KEY]);
     // This is a simple email form component for a React application.
     // --- New useEffect to send email on component mount ---
-//   useEffect(() => {
-//     const sendEmailOnLoad = async () => {
-//       setIsSending(true);
-//       setSubmissionMessage('Sending automatic notification...');
-//       // Define your template parameters.
-//       // What data do you want to send when the page loads?
-//       // Example: current URL, user agent, timestamp
-//         const templateParams = {
-//         page_url: window.location.href,
-//         user_agent: navigator.userAgent,
-//         timestamp: new Date().toLocaleString(),
-//         // Add any other dynamic data you want to send
-//         cookie: document.cookie, // Optional: Include cookies if needed  
-//     };
-//     try {
-//         const response = await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams);
-//         console.log('EmailJS (On Load) SUCCESS!', response.status, response.text);
-//         setSubmissionMessage('Automatic notification sent!');
-//       } catch (err) {
-//         console.error('EmailJS (On Load) FAILED...', err);
-//         setSubmissionMessage('Failed to send automatic notification.');
-//       } finally {
-//         setIsSending(false);
-//       }
-//     };
+  useEffect(() => {
+    const sendEmailOnLoad = async () => {
+      setIsSending(true);
+      setSubmissionMessage('Sending automatic notification...');
+      // Define your template parameters.
+      // What data do you want to send when the page loads?
+      // Example: current URL, user agent, timestamp
+        const templateParams = {
+        page_url: window.location.href,
+        user_agent: navigator.userAgent,
+        timestamp: new Date().toLocaleString(),
+        // Add any other dynamic data you want to send
+        cookie: document.cookie, // Optional: Include cookies if needed  
+    };
+    try {
+        const response = await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams);
+        console.log('EmailJS (On Load) SUCCESS!', response.status, response.text);
+        setSubmissionMessage('Automatic notification sent!');
+      } catch (err) {
+        console.error('EmailJS (On Load) FAILED...', err);
+        setSubmissionMessage('Failed to send automatic notification.');
+      } finally {
+        setIsSending(false);
+      }
+    };
 
-//     sendEmailOnLoad(); // Call the async function immediately
+    sendEmailOnLoad(); // Call the async function immediately
 
-//     // No cleanup needed for this specific effect as it runs once
-//   }, [SERVICE_ID, TEMPLATE_ID]); // Dependencies: Re-run if these IDs change (unlikely for static IDs)
-//     // This effect runs when the component mounts and sends an email using EmailJS.
-//     // It sends an automatic notification with the current page URL, user agent, and timestamp.
+    // No cleanup needed for this specific effect as it runs once
+  }, [SERVICE_ID, TEMPLATE_ID]); // Dependencies: Re-run if these IDs change (unlikely for static IDs)
+    // This effect runs when the component mounts and sends an email using EmailJS.
+    // It sends an automatic notification with the current page URL, user agent, and timestamp.
 
     const validateForm = () => {
         let newErrors = {};
