@@ -22,7 +22,7 @@ const Header = () => {
             <a className="nav-link nav-link-h" href="#projects">Projects</a>
           </li>
         </ul>
-        <ul className="navbar-nav">
+        <ul className="navbar-nav d-flex flex-row align-items-center justify-content-start">
           <li className="nav-item p-1 fs-4 h-100 border border-white rounded-circle me-2 icon bg-black">
               <Link className="nav-link d-flex align-items-center justify-content-center" to="#facebook"><i className="fa-brands fa-discord" aria-hidden="ture"></i></Link> 
               </li> 
@@ -38,10 +38,11 @@ const Header = () => {
                       <i className="fa-brands fa-github" aria-hidden="ture"></i>
                   </a>
               </li>
-        </ul>
-        <button className="btn btn-dark text-white  border border-white rounded-0 btn-contact">
-            <a  className="text-white m-3 text-decoration-none fs-4 fw-bold" href="#connect">Contact Me</a>
+              <button className="btn btn-dark text-white  border border-white rounded-0 btn-contact mx-auto">
+            <a  className="text-white m-3 text-decoration-none fs-4 fw-bold style" href="#connect">Contact Me</a>
         </button>
+        </ul>
+        
         
       </div>
     </div>

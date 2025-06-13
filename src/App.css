@@ -3,11 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-.App {
-  text-align: center;
-  font-family: 'Arial', sans-serif;
-  color: #333;
-}
 /* li,p,h1,h2,h3,h4,h5,h6,button,span,div{
 
   color: black !important;
@@ -15,7 +10,7 @@
 } */
 li .nav-link-h:hover{
   border-bottom: 0.5px solid rgba(126, 30, 71, 0.7) !important;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out !important;
 }
 .header{
   padding: 20px;
@@ -296,4 +291,135 @@ img.img-animate{
   padding: 20px;
   text-align: center;
   font-size: 24px;
+}
+@media screen and (max-width: 1024px) {
+ .nav.navbar.scrolled a.style ,a.style{
+    font-size: 1rem !important;
+    margin-left: 9% !important;
+  }
+#skills{
+  height: 160vh !important;
+  background-color: #000 !important;
+}
+#contact {
+  margin-bottom: -40% !important;
+}
+ .email-form img{
+    width: 50% !important;
+    margin-left: -10% !important;
+  }
+  #connect{
+    margin-top: -50% !important;
+    margin-bottom: 50%  !important;
+  }
+  .email-form .form-div{
+    width: 60% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+    .main div h2 {
+    width: 300px;
+    font-size: 2rem !important;
+  }
+  .main div{
+    width: 300px;
+    font-size: 2rem !important;
+  }
+  .main div p{
+    width: 300px;
+    font-size: 2.5rem !important;
+  }
+  .main video {
+    width: 280px !important;
+    margin: 0px 0px 20px 20px !important;
+  }
+  .email-form img{
+    width: 100% !important;
+    margin-bottom: 35% !important;
+  }
+  .email-form .form-div{
+    width: 100% !important;
+    flex-direction: column !important;
+  }
+  
+}
+@media screen and (max-width: 576px) {
+  #home {
+    height: 270vh !important;
+  }
+  .main{
+    flex-direction: column !important;
+  }
+  .main div h2 {
+    width: 400px;
+    font-size: 2.5rem !important;
+  }
+  .main div{
+    width: 400px;
+    font-size: 2rem !important;
+  }
+  .main div p{
+    width: 400px;
+    font-size: 2.5rem !important;
+  }
+  .main video {
+    width: 500px !important;
+    margin: 0px 0px 20px 20px !important;
+  }
+  .email-form img{
+    width: 100% !important;
+    margin-bottom: 25% !important;
+  }
+  .email-form .form-div{
+    width: 100% !important;
+    flex-direction: column !important;
+  }
+} 
+@media screen and (max-width: 450px) {
+
+  #home {
+    height: 270vh !important;
+  }
+  .main{
+    flex-direction: column !important;
+     margin-left: -6%;
+  }
+  .main div h2 {
+    width: 300px;
+    font-size: 2rem !important;
+   
+  }
+  .main div p{
+    width: 280px;
+  }
+  .main div{
+    font-size: 1.5rem !important;
+    width: 320px;
+  }
+  .main video {
+    width: 400px !important;
+    margin: 0px 0px 20px 40px !important;
+  }
+  .email-form img{
+    width: 100% !important;
+    margin-bottom: 25% !important;
+  }
+  .email-form .form-div{
+    width: 100% !important;
+    flex-direction: column !important;
+  }
+ .footer div{
+  flex-direction: column !important;
+  margin-top: 10% !important;
+  }
+ .footer div .p {
+    margin-bottom: 10% !important;
+    font-size: 3.8rem !important;
+ }
+ .footer div li {
+    margin-bottom: 10% !important;
+ }
+.footer ul{
+  margin-left: -10% !important;
+}
 }

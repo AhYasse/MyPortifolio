@@ -62,7 +62,7 @@ const Connect = () => {
             });
     }
     return (
-        <section className="connect d-flex flex-row align-items-center justify-content-center" id="connect">
+        <section className="connect d-flex flex-row align-items-center justify-content-center form-div" id="connect">
             <div className="fw-bold text-center text-white rounded shadow mb-3">
                 Subscribe to my newsletter
             </div>

@@ -137,7 +137,7 @@ const EmailForm = () => {
             message: user_message,
         };
         setIsSending(true);
-         document.onload.emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
+         emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
             .then((response) => {
                 console.log("Email sent successfully!", response.status, response.text);
                 setSubmissionMessage("Message sent successfully!");
@@ -157,11 +157,13 @@ const EmailForm = () => {
             });
     };
     return (
-        <section id="contact" className="container-fluid bg-dark position-relative p-5 shadow mx-center">
-            <div className="text-white position-absolute start-10 justify-content-start top-50 translate-middle-y">
-                    <img src={contactImg} alt="imgContact Illustration"   style={{width: "530px", height: "550px"}} className="img-animate" />
-                </div>
-            <div className="d-flex justify-content-center" id="connect">
+        <section id="contact" className="container-fluid bg-dark position-relative p-5 shadow mx-center email-form">
+                         <div className="d-flex justify-content-start flex-row">
+                                 <img src={contactImg} alt="imgContact Illustration"   style={{width: "530px", height: "550px"}} className="img-animate" />
+                         </div>
+            <div className="text-white d-flex justify-content-start flex-row">
+                  
+            <div className="d-flex justify-content-end flex-row form-div" id="connect"  style={ {marginTop: "-40%"} }>
                 <div className="col-12 col-lg-12 p-5 text-white">
                     <h2 className="text-center mb-4">Contact Me</h2>
                         <form onSubmit={handleSubmit} className="row g-3 justify-content-center">
@@ -187,7 +189,7 @@ const EmailForm = () => {
                             </div>
                                 <button type="submit" className="btn btn-primary  col-12 col-lg-6" disabled={isSending}>Send Message</button>
                                 <div className="col-12 col-lg-6">
-                                    {isSending && <div className="text-info">Sending...</div>}
+                                    {isSending &&  <div className="text-info">Sending...</div>}
                                     {!isSending && <div className="text-success">Ready to send your message!</div>}
                             </div>
                         </form>
@@ -199,7 +201,8 @@ const EmailForm = () => {
                 </div>
                     
             </div>
-            <Connect />
+              </div>
+              <Connect />
         </section>
     );
     }

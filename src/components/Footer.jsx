@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-dark text-white p-3 footer">
           <div className="container d-flex  justify-space-around justify-content-between align-items-center">
-              <Link className="navbar-brand fs-1 fw-bold shadow" to="/">Portifolio</Link>
+              <Link className="navbar-brand fs-1 fw-bold shadow p" to="/">Portifolio</Link>
                 <ul className="d-flex">
                   <li className="nav-item p-2 fs-3 h-100 border border-white rounded-circle me-2 icon bg-black">
                                <Link className="nav-link d-flex align-items-center justify-content-center" to="#facebook"><i className="fa-brands fa-discord" aria-hidden="ture"></i></Link> 
@@ -23,6 +23,17 @@ const Footer = () => {
                                </li>
                 </ul>
             </div>
+                    <ul className="navbar-nav m-auto fw-bold d-flex flex-row justify-content-center align-items-center">
+                       <li className="nav-item  ps-4 fw-bold">
+                          <a className="nav-link" href="#home">Home</a>
+                        </li>
+                        <li className="nav-item ps-4 fw-bold">
+                          <a className="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li className="nav-item ps-4 fw-bold">
+                          <a className="nav-link" href="#projects">Projects</a>
+                        </li>
+                    </ul>
       <div className="container text-center">
         <p>&copy;{new Date().getFullYear()} coded by <i class="fa fa-heartbeat text-danger" aria-hidden="true"></i>  Ahmed Yasser</p>
       </div>
