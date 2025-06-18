@@ -381,7 +381,7 @@ img.img-animate{
     flex-direction: column !important;
   }
 } 
-@media (min-width: 450px) and (max-width: 575px) {
+@media (min-width: 350px) and (max-width: 575px) {
    .header{
     width: 100% !important;
   }
@@ -406,7 +406,7 @@ img.img-animate{
     width: 320px;
   }
   .main video {
-    width: 400px !important;
+    width: 300px !important;
     margin: 0px 0px 20px 40px !important;
   }
   .email-form img{
