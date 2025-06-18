@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MyPortifolio/static/css/main.690f73d1.css",
-    "main.js": "/MyPortifolio/static/js/main.7aaeac87.js",
+    "main.js": "/MyPortifolio/static/js/main.990de5a1.js",
     "static/js/488.97eb63f3.chunk.js": "/MyPortifolio/static/js/488.97eb63f3.chunk.js",
     "static/media/project2-full.png": "/MyPortifolio/static/media/project2-full.a630ece41d64f663b85e.png",
     "static/media/project1-full.png": "/MyPortifolio/static/media/project1-full.abf4255ddf9734495df9.png",
@@ -12,6 +12,7 @@
     "static/media/project1.png": "/MyPortifolio/static/media/project1.96fd10e0c7f859809bc7.png",
     "static/media/12084824_20943984.png": "/MyPortifolio/static/media/12084824_20943984.60ce1e3652140ddb3660.png",
     "static/media/project3.png": "/MyPortifolio/static/media/project3.8743278f5e2f455602b5.png",
+    "static/media/5_yzznct.mp4": "/MyPortifolio/static/media/5_yzznct.972a91f393850c865cd5.mp4",
     "static/media/fa-solid-900.ttf": "/MyPortifolio/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
     "static/media/fa-brands-400.ttf": "/MyPortifolio/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
     "static/media/fa-solid-900.woff2": "/MyPortifolio/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
@@ -24,11 +25,11 @@
     "static/media/fa-v4compatibility.woff2": "/MyPortifolio/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/MyPortifolio/index.html",
     "main.690f73d1.css.map": "/MyPortifolio/static/css/main.690f73d1.css.map",
-    "main.7aaeac87.js.map": "/MyPortifolio/static/js/main.7aaeac87.js.map",
+    "main.990de5a1.js.map": "/MyPortifolio/static/js/main.990de5a1.js.map",
     "488.97eb63f3.chunk.js.map": "/MyPortifolio/static/js/488.97eb63f3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.690f73d1.css",
-    "static/js/main.7aaeac87.js"
+    "static/js/main.990de5a1.js"
   ]
 }
