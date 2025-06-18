@@ -1,5 +1,6 @@
 import React from "react";
 import TypeWriterEffect from "./TypeWriterEffect";
+import contactVideo from "../assets/images/5_yzznct.mp4"
 const Main = () => {    
     return (
        <main id="home">
@@ -14,8 +15,9 @@ const Main = () => {
                  </div>
             </div>
                 <div>
-                    <video  src="https://v.etsystatic.com/video/upload/s--q0GjfJpQ--/ac_none,c_crop,du_15,h_720,q_auto:good,w_720,x_282,y_0/5_yzznct.mp4" preload="true" autoPlay loop  className="" style={{objectFit: "warp",}} width={"430px"} height={"650px"}>
-                            <source media="(min-width: 400px )" srcset="./src/assets/images/5_yzznct.mp4" />
+                   
+                    <video  src={contactVideo} preload="true" autoPlay loop  className="" style={{objectFit: "warp",}} width={"430px"} height={"650px"}>
+                           <source media="(min-width: 400px )"  type="video/mp4"/>
                     </video>
                 </div>
             </section>
