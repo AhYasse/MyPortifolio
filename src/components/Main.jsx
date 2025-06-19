@@ -16,7 +16,7 @@ const Main = () => {
             </div>
                 <div>
                    
-                    <video  src={contactVideo} preload="true" autoPlay loop  className="" style={{objectFit: "warp",}} width={"430px"} height={"650px"}>
+                    <video  src={contactVideo} preload="true" autoPlay muted loop  className="" style={{objectFit: "warp",}} width={"430px"} height={"650px"}>
                            <source media="(min-width: 400px )"  type="video/mp4"/>
                     </video>
                 </div>
